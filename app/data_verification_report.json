@@ -1,0 +1,46 @@
+{
+  "timestamp": "2025-07-19T07:05:33.923740",
+  "basic_statistics": {
+    "total_records": 1215,
+    "unique_instruments": 1,
+    "earliest_date": "2014-01-24 00:00:00",
+    "latest_date": "2018-12-28 00:00:00",
+    "unique_dates": 1215
+  },
+  "null_values": {
+    "datetime": 0,
+    "close": 0,
+    "high": 0,
+    "low": 0,
+    "open": 0,
+    "volume": 0,
+    "instrument": 0
+  },
+  "duplicates": [],
+  "data_ranges": {
+    "HINDALCO": {
+      "price_range": [
+        "60.90",
+        "279.80"
+      ],
+      "avg_price": "166.6862139917695473",
+      "volume_range": [
+        429601,
+        43496929
+      ],
+      "avg_volume": "9931624.790123456790",
+      "record_count": 1215
+    }
+  },
+  "consistency_issues": [],
+  "completeness": {
+    "HINDALCO": {
+      "total_records": 1215,
+      "unique_dates": 1215,
+      "expected_records": 1800,
+      "completeness_percentage": 67.5,
+      "first_date": "2014-01-24 00:00:00",
+      "last_date": "2018-12-28 00:00:00"
+    }
+  }
+}

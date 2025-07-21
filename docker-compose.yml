@@ -1,0 +1,45 @@
+services:
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    container_name: invsto_postgres
+    environment:
+      POSTGRES_DB: invsto_db
+      POSTGRES_USER: invsto_user
+      POSTGRES_PASSWORD: invsto_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - invsto_network
+    restart: unless-stopped
+
+  # FastAPI Application
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: invsto_fastapi
+    ports:
+      - "8000:8000"
+    environment:
+      POSTGRES_HOST: postgres
+      POSTGRES_DB: invsto_db
+      POSTGRES_USER: invsto_user
+      POSTGRES_PASSWORD: invsto_password
+    volumes:
+      - ./app:/app
+    depends_on:
+      - postgres
+    networks:
+      - invsto_network
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+
+networks:
+  invsto_network:
+    driver: bridge 

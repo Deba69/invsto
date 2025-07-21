@@ -1,0 +1,27 @@
+2025-07-19 07:01:16,729 - ERROR - CSV file not found: ../HINDALCO_1D.xlsx - HINDALCO.csv
+2025-07-19 07:05:06,012 - INFO - Starting import process for: HINDALCO_1D.xlsx - HINDALCO.csv
+2025-07-19 07:05:06,016 - ERROR - Failed to connect to database: connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2025-07-19 07:05:06,017 - ERROR - Data import failed!
+2025-07-19 07:05:10,966 - INFO - Starting import process for: HINDALCO_1D.xlsx - HINDALCO.csv
+2025-07-19 07:05:10,992 - INFO - Successfully connected to PostgreSQL database
+2025-07-19 07:05:10,998 - INFO - Database contains 0 existing records
+2025-07-19 07:05:11,001 - INFO - CSV structure validation passed
+2025-07-19 07:05:11,050 - INFO - Parsed 1215 valid rows from CSV
+2025-07-19 07:05:11,305 - INFO - Inserted batch 1: 1000 records (Total: 1000)
+2025-07-19 07:05:11,389 - INFO - Inserted batch 2: 215 records (Total: 1215)
+2025-07-19 07:05:11,390 - INFO - Successfully inserted 1215 records
+2025-07-19 07:05:11,403 - INFO - Data integrity verification completed
+2025-07-19 07:05:11,404 - INFO - === DATA INTEGRITY VERIFICATION RESULTS ===
+2025-07-19 07:05:11,404 - INFO - Total records: 1215
+2025-07-19 07:05:11,405 - INFO - Duplicate records: 0
+2025-07-19 07:05:11,407 - INFO - Date range: 2014-01-24 00:00:00 to 2018-12-28 00:00:00
+2025-07-19 07:05:11,407 - INFO - Unique instruments: 1
+2025-07-19 07:05:11,409 - INFO - Price range: (Decimal('60.90'), Decimal('279.80'))
+2025-07-19 07:05:11,410 - INFO - Volume range: (429601, 43496929)
+2025-07-19 07:05:11,411 - INFO - === IMPORT PROCESS COMPLETED SUCCESSFULLY ===
+2025-07-19 07:05:11,413 - INFO - Database connection closed
+2025-07-19 07:05:11,416 - INFO - Data import completed successfully!

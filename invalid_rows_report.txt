@@ -1,0 +1,5 @@
+INVALID ROWS REPORT
+==================================================
+
+Total invalid rows: 0
+
